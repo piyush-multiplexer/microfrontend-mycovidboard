@@ -47,5 +47,9 @@ module.exports = {
                 importMapOverridesLocalStorageKey: null
             })
         ]
-    }
+    },
+
+    transpileDependencies: [
+      'vuetify'
+    ]
 }
