@@ -4,7 +4,8 @@ module.exports = {
     configureWebpack: {
         devServer: {
             // Not required, but it's often useful to run webpack-dev-server in SPA mode
-            historyApiFallback: true
+            historyApiFallback: true,
+            port: 10001
         },
         plugins: [
             // the standalone plugin works in conjunction with HtmlWebpackPlugin
@@ -47,5 +48,9 @@ module.exports = {
                 importMapOverridesLocalStorageKey: null
             })
         ]
-    }
+    },
+
+    transpileDependencies: [
+        'vuetify'
+    ]
 }
